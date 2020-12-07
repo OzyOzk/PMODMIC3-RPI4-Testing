@@ -1,6 +1,6 @@
 # PMODMIC3-RPI4-Testing
 Code to test the PMOD MIC3 microphone on a Raspberry Pi 4. Runs at around 57KHz. Can be increased by changing the CLOCK_FREQUENCY define. (This is actually baud rate,
-not the clock frequency. anything above 2000000 and the microphone may not perform as expected)
+not the clock frequency. Anything above 2000000 and the microphone may not perform as expected)
 
 ## Requirements
 
