@@ -9,6 +9,17 @@ not the clock frequency. Anything above 2000000 and the microphone may not perfo
 * x6 female to female jumper wires
 * pigpio c library
 
+## Connections
+```
+PMOD MIC3 Module    Raspberry Pi 4
+SS      --------->  Pin 24  (GPIO 08 CE0)
+94V-0   --------->  
+MISO    --------->  Pin 21  (GPIO 09 MISO)
+SCK     --------->  Pin 23  (GPIO 11 SCLK)
+GND     --------->  Pin 06  (Ground)
+VCC     --------->  Pin 01  (3V3 Power)
+```
+
 ## Instructions
 
 * install pigpio with the following commands
