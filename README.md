@@ -12,6 +12,7 @@ not the clock frequency. Anything above 2000000 and the microphone may not perfo
 ## Connections
 ```
 PMOD MIC3 Module    Raspberry Pi 4
+------------------------------------------
 SS      --------->  Pin 24  (GPIO 08 CE0)
 94V-0   --------->  
 MISO    --------->  Pin 21  (GPIO 09 MISO)
