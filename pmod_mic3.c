@@ -9,11 +9,12 @@ struct timespec ts;
 
 double pmod_mic3(double* in_array, int size){
   if (gpioInitialise() < 0) return 1;
-  ts.tv_nsec = 2300;
-  ts.tv_sec = 0;
+
   double start, delta;
   double analog = 0;
+
   int h = spiOpen(0, BAUD_RATE, 0);
+  
   if (h < 0) return 1;
   
   /*bits to send*/
@@ -23,7 +24,6 @@ double pmod_mic3(double* in_array, int size){
   unsigned char buf[2] = {0, 0};
   
   start = time_time();
-
 
   for (int i=0; i<size; i++){
     spiXfer(h, snd, buf, 2);
